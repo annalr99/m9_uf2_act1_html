@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+    <title>Activitat 2</title>
+</head>
+<body>
+
+  
+	<div class="wrapper">
+		<section id="section1">
+			<a href="#section4">‹</a>
+			
+				<img class="item"src="img/gato1.jpg">
+			 
+			
+				<img class="item"src="img/gato2.jpg">
+			 
+			
+				<img class="item"src="img/gato3.jpg">
+			 
+			
+				<img class="item"src="img/gato4.jpg">
+			 
+			
+				<img class="item"src="img/gato5.jpg">
+			 
+			<a href="#section2">›</a>
+		</section>
+  <section id="section2">
+    <a href="#section1">‹</a>
+      
+        <img class="item"src="img/gato6.jpg">
+       
+      
+        <img class="item"src="img/gato7.jpg">
+       
+      
+        <img class="item"src="img/gato8.jpg">
+       
+      
+        <img class="item"src="img/gato9.jpg">
+       
+      
+        <img class="item"src="img/gato10.jpg">
+       
+    <a href="#section3">›</a>
+  </section>
+
+  <section id="section3">
+    <a href="#section2">‹</a>
+      
+        <img class="item"src="img/gato11.jpg">
+       
+      
+        <img class="item"src="img/gato12.jpg">
+       
+      
+        <img class="item"src="img/gato13.jpg">
+       
+      
+        <img class="item"src="img/gato14.jpg">
+       
+      
+        <img class="item"src="img/gato15.jpg" >
+       
+    <a href="#section4">›</a>
+  </section>
+
+  <section id="section4">
+    <a href="#section3">‹</a>
+      
+        <img class="item"src="img/gato16.jpg">
+       
+      
+        <img class="item"src="img/gato17.jpg">
+       
+      
+        <img class="item"src="img/gato18.jpg">
+       
+      
+        <img class="item"src="img/gato19.jpg">
+       
+      
+        <img class="item"src="img/gato20.jpg">
+       
+    <a href="#section1">›</a>
+  </section>
+  <div class="myModal">
+      <button class="close">X</button>
+      <img id="imgEscalada"src="img/gato2.jpg">
+  </div>
+</div>
+
+<script>
+  let modal = document.querySelector(".myModal");
+  let imgmodal = document.querySelector("#imgEscalada");
+  let images = document.querySelectorAll(".item");
+  
+  for (i=0; i<images.length; i++){
+
+    images[i].addEventListener("click", function(){
+      modal.style.display="block";
+      imgmodal.src=this.src;
+    })
+  }
+
+  let close = document.querySelector(".close");
+
+  close.addEventListener("click", function(){
+    modal.style.display="none";
+  })
+
+</script>
+
+
+	
+    
+</body>
+</html>
